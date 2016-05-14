@@ -39,11 +39,18 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel drawer="" mode="seamed" at-top="">
+      <div id="drawer_content" style="border: none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel main="" mode="seamed" at-top="">
+      <iron-pages id="app_content" attr-for-selected="id">
+        <section id="Home">
+          <poly-icon-button icon="favorite" src="" link="" id="poly4" style="margin: 0px; padding: 8px 8px 12px;" flex=""></poly-icon-button>
+          <poly-label text="Prueba" size="paper-font-subhead" link="" id="poly5"></poly-label>
+          <poly-tabs tabs="[{&quot;name&quot;:&quot;Cosas&quot;},{&quot;name&quot;:&quot;Estilos&quot;}]" selected_tab="0" id="poly6"></poly-tabs>
+          <poly-paragraph text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptas illo inventore debitis et sit molestiae pariatur doloremque dicta." size="paper-font-body1" link="" id="poly7"></poly-paragraph>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
